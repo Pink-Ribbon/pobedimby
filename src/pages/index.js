@@ -25,12 +25,12 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <ol style={{ listStyle: `none` }}>
+      <div className="touts">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
-            <li key={post.fields.slug}>
+            <div className="tout" key={post.fields.slug}>
               <article
                 className="post-list-item"
                 itemScope
@@ -53,10 +53,10 @@ const BlogIndex = ({ data, location }) => {
                   />
                 </section>
               </article>
-            </li>
+            </div>
           )
         })}
-      </ol>
+      </div>
     </Layout>
   )
 }
