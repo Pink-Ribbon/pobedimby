@@ -4,15 +4,14 @@ import HeaderMain from './header-main'
 import Header from './header'
 import Footer from './footer'
 
-const Layout = ({ location, title, post, children }) => {
+const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
-
   if (isRootPath) {
     header = <HeaderMain />
   } else {
-    header = <Header>{post.frontmatter.title}</Header>
+    header = <Header>{title}</Header>
   }
 
   return (
