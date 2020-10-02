@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 import HeaderMain from './header-main'
+import Header from './header'
 import Footer from './footer'
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, post, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
@@ -11,11 +12,7 @@ const Layout = ({ location, title, children }) => {
   if (isRootPath) {
     header = <HeaderMain />
   } else {
-    header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
-    )
+    header = <Header>{post.frontmatter.title}</Header>
   }
 
   return (

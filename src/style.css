@@ -36,18 +36,44 @@
 body {
   color: var(--color-gray-dark);
   font-family: var(--fontFamily-sans);
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* typography
+/* =========== */
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+/* colors
+/* =========== */
+
+.text-pink {
+  color: var(--color-pink);
 }
 
 /* layout
 /* =========== */
 
-.global-wrapper {
-}
-
 .container {
   padding: var(--space);
   max-width: var(--screen-xl);
   margin: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-1\/2 {
+  width: 49%;
+}
+
+.col-1\/3 {
+  width: calc(100% / 3);
 }
 
 /* Elements
@@ -117,6 +143,19 @@ a {
   width: 48%;
   margin: var(--space) 0;
   padding: var(--space);
+  min-height: 80px;
+}
+
+.tout h2 {
+  margin: 0;
+}
+
+/* actions */
+
+.action {
+  border: 1px solid var(--color-gray-light);
+  border-radius: var(--radius);
+  padding: var(--space);
 }
 
 /* Screens
@@ -143,6 +182,7 @@ a {
 
   .tout {
     width: 192px;
+    min-height: 176px;
   }
 }
 

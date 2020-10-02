@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
+import Header from "../components/header"
 import SEO from "../components/seo"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
@@ -11,7 +12,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { previous, next } = pageContext
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle} post={post}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -21,10 +22,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
+        {/* <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
-        </header>
+        </header> */}
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"

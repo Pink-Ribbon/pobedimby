@@ -4,64 +4,86 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const BlogIndex = ({ data, location }) => {
+const HomePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <SEO title="All posts" />
-      
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
-
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title={siteTitle} />
+
+      <h1>Рак молочной железы</h1>
+
+      <p className="col-1/2">
+        Один из самых распространенных «женских» раков в мире. 
+        Занимает первое место среди всех онкологических заболеваний у женщин. 
+        В течение жизни примерно 1 из 8 женщин ставят такой диагноз.
+      </p>
+
+      <div className="flex">
+        <div className="fact col-1/3">
+          <h2 className="text-pink">60 000</h2>
+          <p>
+            Человек только в нашей стране ежегодно заболевают раком молочной железы
+          </p>
+        </div>
+        <div className="fact col-1/3">
+          <h2 className="text-pink">50 лет</h2>
+          <p>
+            Средний возраст женщины, старше которого увеличивается риск заболевания
+          </p>
+        </div>
+        <div className="fact col-1/3">
+          <h2 className="text-pink">50 лет</h2>
+          <p>
+            Процент заболевания, которое случается у мужчин. Пройдите <Link to="/diagnose">профилактическое обследование</Link>
+          </p>
+        </div>
+      </div>
+
       <div className="touts">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
-            <div className="tout" key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
-            </div>
+            <Link key={post.fields.slug}  className="tout" to={post.fields.slug} itemProp="url">
+              {title}
+            </Link>
           )
         })}
       </div>
+
+      <div className="actions flex">
+        <div className="action col-1/2">
+          <h2>Получить помощь</h2>
+          <p>
+            Согласно статистике, каждые 19 секунд одной женщине в мире ставят диагноз «рак молочной железы». 
+            Профилактика важнее лечения, обращайтесь за помощью вовремя
+          </p>
+          <div className="links">
+            <Link to="/">Клиники </Link> 
+            <Link to="/">Врачи </Link> 
+            <Link to="/">Психологи </Link> 
+            <Link to="/">Самопомощь </Link> 
+          </div>
+        </div>
+        <div className="action col-1/2">
+          <h2>Помочь проекту</h2>
+          <p>
+            Солидарность — самый большой вклад в борьбу с проблемой рака груди.
+            Рассказывайте родным и знакомым о ранних симптомах и важности профилактики. Поделитесь ссылкой с друзьями
+          </p>
+          <div className="links">
+            <Link to="/">Подробнее</Link>
+          </div>
+        </div>
+      </div>
+
     </Layout>
   )
 }
 
-export default BlogIndex
+export default HomePage
 
 export const pageQuery = graphql`
   query {
