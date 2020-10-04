@@ -14,7 +14,7 @@ const HomePage = ({ data, location }) => {
 
       <h2>Рак молочной железы</h2>
 
-      <p className="col-1/2">
+      <p className="col-1/2 space-y">
         Один из самых распространенных «женских» раков в мире. 
         Занимает первое место среди всех онкологических заболеваний у женщин. 
         В течение жизни примерно 1 из 8 женщин ставят такой диагноз.
@@ -60,11 +60,15 @@ const HomePage = ({ data, location }) => {
             Согласно статистике, каждые 19 секунд одной женщине в мире ставят диагноз «рак молочной железы». 
             Профилактика важнее лечения, обращайтесь за помощью вовремя
           </p>
-          <div className="links">
-            <Link to="/">Клиники </Link> 
-            <Link to="/">Врачи </Link> 
-            <Link to="/">Психологи </Link> 
-            <Link to="/">Самопомощь </Link> 
+          <div className="links space-y">
+            <Link className="col" to="/">Клиники</Link>
+            <Link className="col" to="/">Врачи</Link>
+            <Link className="col" to="/">Психологи</Link>
+            <Link className="col" to="/">Самопомощь</Link>
+          </div>
+          <div className="buttons flex">
+            <Link className="btn btn-pink col col-1/2" to="/">Пройти диагностику</Link>
+            <Link className="btn btn-gray col col-1/2" to="/">Оценить риск</Link>
           </div>
         </div>
         <div className="action col col-1/2">

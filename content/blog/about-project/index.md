@@ -1,9 +1,9 @@
 ---
 title: О проекте
-description: "О проекте"
+description: "Компания EPAM присоединяется к Estée Lauder в информационное движение против заболевания рака груди. Важно обратить внимание на профилактику и раннюю диагностику в Беларуси и странах СНГ. Пора победить рак груди вместе!"
 ---
 
-![О проекте](./pink-ribbon-breast-cancer-awareness-concept-PFW5PBH)
+![О проекте](./pink-ribbon-breast-cancer-awareness-concept-PFW5PBH.jpg)
 
 ## О проекте
 

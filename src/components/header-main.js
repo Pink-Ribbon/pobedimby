@@ -2,12 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 
 const HeaderMain = () => (
-  <div className="main-header container space-y">
+  <div className="main-header container">
     <h1 className="title col-1/2">
       Весте <strong>победим</strong><br />
       рак молочной железы
     </h1>
-    <div className="image-container"></div>
+    <div className="image-container" />
     <p className="space-y col-1/2">
       В Беларуси ежегодно около 4,5 тысячи женщин заболевают раком молочной железы.
       При ранней диагностике РМЖ излечивается почти в 100% случаев
