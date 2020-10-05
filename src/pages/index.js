@@ -90,8 +90,8 @@ const HomePage = ({ data, location }) => {
             <Link className="col" to="/">Самопомощь</Link>
           </div>
           <div className="buttons flex">
-            <Link className="btn btn-pink col col-1/2" to="/diagnose/">Пройти диагностику</Link>
-            <Link className="btn btn-gray col col-1/2" to="/">Оценить риск</Link>
+            <Link className="btn btn-pink col col-1/2" to="/diagnose">Пройти диагностику</Link>
+            <Link className="btn btn-gray col col-1/2" to="/quiz">Оценить риск</Link>
           </div>
         </div>
         <div className="action col col-1/2 project-help">
