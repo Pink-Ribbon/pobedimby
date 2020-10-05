@@ -9,7 +9,7 @@ const quiz =  {
   "quizTitle": "Оценка риска",
   "questions": [
     {
-      "question": "Ваш возраст",
+      "question": "Ваш возраст?",
       "questionType": "text",
       "answerSelectionType": "single",
       "answers": [
@@ -21,7 +21,7 @@ const quiz =  {
       "correctAnswer": "1"
     },
     {
-      "question": "У вас ранее был рак груди",
+      "question": "У вас ранее был рак груди?",
       "questionType": "text",
       "answerSelectionType": "single",
       "answers": [
@@ -31,7 +31,7 @@ const quiz =  {
       "correctAnswer": "1"
     },
     {
-      "question": "У вас была операция на груди, показавшая атипию",
+      "question": "У вас была операция на груди, показавшая атипию?",
       "questionType": "text",
       "answerSelectionType": "single",
       "answers": [

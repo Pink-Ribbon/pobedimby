@@ -50,6 +50,9 @@
   --font-size-h2: 24px;
   --font-size-h3: 20px;
   --font-size-h4: 16px;
+
+  --quiz-start-button-label: "НАЧАТЬ";
+  --quiz-next-button-label: "ДАЛЕЕ";
 }
 
 /* Globals
@@ -285,6 +288,8 @@ main p:first-child {
 .react-quiz-container {
   margin: 0 auto 100px !important;
   text-align: center;
+  width: unset !important;
+  max-width: 500px;
 }
 
 .react-quiz-container .questionWrapper .btn.correct {
@@ -325,6 +330,35 @@ main p:first-child {
 
 .quiz-result {
   color: var(--color-pink);
+}
+
+.startQuizBtn.btn,
+.nextQuestionBtn.btn {
+  display: inline-block;
+  position: relative;
+  min-width: 100px;
+}
+
+.startQuizBtn.btn:after,
+.nextQuestionBtn.btn:after {
+  background-color: var(--color-white);
+  display: inline-block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.startQuizBtn.btn:after {
+  content: var(--quiz-start-button-label);
+}
+
+.nextQuestionBtn.btn:after {
+  content: var(--quiz-next-button-label);
 }
 
 /* Screens
