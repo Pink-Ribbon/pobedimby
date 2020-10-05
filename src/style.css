@@ -262,6 +262,56 @@ main p:first-child {
   margin-bottom: var(--space-y);
 }
 
+/* Quiz */
+.tag-container {
+  display: none;
+}
+
+.react-quiz-container {
+  margin: 0 auto 100px !important;
+  text-align: center;
+}
+
+.react-quiz-container .questionWrapper .btn.correct {
+  background-color: var(--color-blue-epam) !important;
+  color: var(--color-white) !important;
+}
+
+.react-quiz-container .incorrect {
+  background: var(--color-blue-epam) !important;
+  color: var(--color-white) !important;
+}
+
+.react-quiz-container .questionModal + div,
+.react-quiz-container > div > h2 + div {
+  display: none;
+}
+
+.react-quiz-container > div > h2 {
+  color: var(--color-pink);
+}
+
+.react-quiz-container .questionWrapper .questionWrapperBody div:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+.react-quiz-container .questionWrapper .questionWrapperBody h3 {
+  color: var(--color-pink);
+}
+
+.react-quiz-container .questionWrapper .btn.answerBtn:focus {
+  outline: none;
+}
+
+.react-quiz-container .questionWrapper .btn {
+  margin-bottom: 20px !important;
+}
+
+.quiz-result {
+  color: var(--color-pink);
+}
+
 /* Screens
 /* =========== */
 
