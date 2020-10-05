@@ -22,9 +22,9 @@ const HomePage = ({ data, location }) => {
 
       <div className="flex space-y">
         <div className="fact col col-1/3">
-          <h3 className="text-pink">60 000</h3>
+          <h3 className="text-pink">5 000</h3>
           <p>
-            Человек только в нашей стране ежегодно заболевают раком молочной железы
+            Человек только в Беларуси ежегодно заболевают раком молочной железы
           </p>
         </div>
         <div className="fact col col-1/3">
