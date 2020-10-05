@@ -26,16 +26,17 @@ const Footer = () => (
       </div>
       <div className="col col-1/4">
         <div className="copyright">
-          © 2020 EPAM Systems, Inc
+          © 2020 pobedim.by
+          {/* EPAM Systems, Inc */}
         </div>
         <div className="rights">
           All Rights Reserved
         </div>
-        <div className="share">
+        {/* <div className="share">
           <Link to="/">vk</Link>
           <Link to="/">instagram</Link>
           <Link to="/">facebook</Link>
-        </div>
+        </div> */}
       </div>
     </div>
   </div>
