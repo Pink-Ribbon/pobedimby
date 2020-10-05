@@ -42,7 +42,30 @@ const HomePage = ({ data, location }) => {
       </div>
 
       <div className="touts space-y">
-        {posts.map(post => {
+        <Link key="/about-cancer/"  className="tout" to="/about-cancer/" itemProp="url">
+          <span>Что </span>
+          <span>такое </span>
+          <span>рак</span>
+        </Link>
+        <Link key="/causes/"  className="tout" to="/causes/" itemProp="url">
+          Причины
+        </Link>
+        <Link key="/diagnose/"  className="tout" to="/diagnose/" itemProp="url">
+          <span>Ранняя</span>
+          <span>диагностика</span>
+        </Link>
+        <Link key="/treatment/"  className="tout" to="/treatment/" itemProp="url">
+          Лечение
+        </Link>
+        <Link key="/myths/"  className="tout" to="/myths/" itemProp="url">
+          Мифы
+        </Link>
+        <Link key="/articles/"  className="tout" to="/articles/" itemProp="url">
+          <span>Статьи </span>
+          <span>и истории</span>
+        </Link>        
+        {/* Dinamic touts */}
+        {/* {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
@@ -50,7 +73,7 @@ const HomePage = ({ data, location }) => {
               {title}
             </Link>
           )
-        })}
+        })} */}
       </div>
 
       <div className="actions flex space-y">
@@ -67,18 +90,21 @@ const HomePage = ({ data, location }) => {
             <Link className="col" to="/">Самопомощь</Link>
           </div>
           <div className="buttons flex">
-            <Link className="btn btn-pink col col-1/2" to="/">Пройти диагностику</Link>
+            <Link className="btn btn-pink col col-1/2" to="/diagnose/">Пройти диагностику</Link>
             <Link className="btn btn-gray col col-1/2" to="/">Оценить риск</Link>
           </div>
         </div>
-        <div className="action col col-1/2">
+        <div className="action col col-1/2 project-help">
           <h3>Помочь проекту</h3>
           <p>
             Солидарность — самый большой вклад в борьбу с проблемой рака груди.
             Рассказывайте родным и знакомым о ранних симптомах и важности профилактики. Поделитесь ссылкой с друзьями
           </p>
+          <p>
+            https://pobedim.by
+          </p>
           <div className="links">
-            <Link to="/">Подробнее</Link>
+            <Link to="/about-project/">Подробнее</Link>
           </div>
         </div>
       </div>
