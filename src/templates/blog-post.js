@@ -18,16 +18,35 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article
-        className="blog-post space-y"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
-      </article>
+      <header className="w-full">
+        <h1 className="col-2/3" itemProp="headline">{post.frontmatter.title}</h1>
+      </header>
+      <div className="flex">
+        <article
+          className="blog-post space-y col col-2/3"
+          itemScope
+          itemType="http://schema.org/Article"
+        >
+          <section
+            dangerouslySetInnerHTML={{ __html: post.html }}
+            itemProp="articleBody"
+          />
+        </article>
+        {/* <div className="side-menu col col-1/3">
+          <div>
+            <Link className="side-menu-link" to="/">Клиники</Link>
+          </div>
+          <div>
+            <Link className="side-menu-link" to="/">Врачи</Link>
+          </div>
+          <div>
+            <Link className="side-menu-link" to="/">Самопомощь</Link>
+          </div>
+          <div>
+            <Link className="side-menu-link" to="/quiz/">Пройти тест</Link>
+          </div>
+        </div> */}
+      </div>
     </Layout>
   )
 }
