@@ -43,8 +43,8 @@ const quiz =  {
   ]
 };
 
-const ResultA = 'У Вас высокий риск';
-const ResultB = 'У Вас низкий риск';
+const ResultA = 'Вы находитесь в группе повышенного риска. Рекомендуем не откладывать посещение врача-маммолога';
+const ResultB = 'Вы находитесь в группе пониженного риска. Тем не менее, рекомендуем регулярно посещать врача-маммолога';
 
 const renderCustomResultPage = (obj) => {
   const { numberOfCorrectAnswers } = obj;
