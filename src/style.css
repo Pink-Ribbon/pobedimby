@@ -263,6 +263,40 @@ main p:first-child {
   align-self: center;
 }
 
+.menu-toggle {
+  display: inline-block;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.active .menu-toggle {
+  padding: 15px 10px;
+}
+
+.hamburger {
+  display: block;
+  border-top: 2px solid;
+  width: 20px;
+  margin: 5px 0;
+}
+
+.active .hamburger:nth-child(1) {
+  display: none;
+}
+
+.active .hamburger:nth-child(2) {
+  transform: rotate(45deg);
+  margin-bottom: -7px;
+}
+
+.active .hamburger:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.active .menu-links {
+  display: block;
+}
+
 /* footer */
 
 .footer {
@@ -519,6 +553,14 @@ main p:first-child {
   }
 
   .tout span {
+    display: block;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:visible {
     display: block;
   }
 } 

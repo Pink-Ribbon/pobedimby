@@ -34,10 +34,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </article>
         <div className="side-menu col col-1/3 hidden md:visible">
           <div className="wrapper">
-            <Link className="side-menu-link" to="/">Клиники</Link>
-            <Link className="side-menu-link" to="/">Врачи</Link>
-            <Link className="side-menu-link" to="/">Самопомощь</Link>
-            <Link className="side-menu-link" to="/quiz/">Пройти тест</Link>
+            <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/">Клиники</Link>
+            <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/">Врачи</Link>
+            <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/">Самопомощь</Link>
+            <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/quiz/">Пройти тест</Link>
           </div>
         </div>
       </div>

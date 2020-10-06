@@ -9,19 +9,51 @@ const quiz =  {
   "quizTitle": "Оценка риска",
   "questions": [
     {
-      "question": "Ваш возраст?",
+      "question": "Укажите ваш возраст",
       "questionType": "text",
       "answerSelectionType": "single",
       "answers": [
-        "60+",
-        "50-59+",
-        "40-49",
-        "25-39"
+        "20-40 лет",
+        "40-50 лет",
+        "Старше 50 лет"
+      ],
+      "correctAnswer": "2"
+    },
+    {
+      "question": "Были ли в вашей семье (у ближайших родственников: мамы, сестры, дочери, бабушки, тети) случаи заболевания раком молочной железы или раннего заболевания раком яичников раком (до 50 лет)?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "Да",
+        "Нет",
+        "Не знаю"
       ],
       "correctAnswer": "1"
     },
     {
-      "question": "У вас ранее был рак груди?",
+      "question": "Ваша первая менструация пришла в каком возрасте?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "До 12 лет",
+        "12-14 лет",
+	"После 14 лет"
+      ],
+      "correctAnswer": "1"
+    },
+    {
+      "question": "Ваши первые роды были в каком возрасте?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "До 30 лет",
+        "После 30 лет",
+	"Не рожала"
+      ],
+      "correctAnswer": "2"
+    },
+    {
+      "question": "Принимаете ли вы сейчас или применяли ли вы в недавнем прошлом эстроген-прогестиновые препараты на регулярной основе?",
       "questionType": "text",
       "answerSelectionType": "single",
       "answers": [
@@ -31,7 +63,7 @@ const quiz =  {
       "correctAnswer": "1"
     },
     {
-      "question": "У вас была операция на груди, показавшая атипию?",
+      "question": "Принимаете ли вы сейчас или применяли ли вы в недавнем прошлом гормональные контрацептивы на регулярной основе?",
       "questionType": "text",
       "answerSelectionType": "single",
       "answers": [
@@ -39,12 +71,65 @@ const quiz =  {
         "Нет"
       ],
       "correctAnswer": "1"
-    }
+    },
+    {
+      "question": "Как часто вы употребляете алкоголь?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "Не употребляю вообще",
+        "1-2 раза в год",
+        "1-2 раза в месяц",
+        "1-2 раза в неделю",
+        "Практически ежедневно"
+      ],
+      "correctAnswer": "5"
+    },
+    {
+      "question": "Вы курите?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "Да",
+        "Нет"
+      ],
+      "correctAnswer": "1"
+    },
+    {
+      "question": "Есть ли у вас установленные диагнозы рака молочной железы или яичников?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "Да",
+        "Нет"
+      ],
+      "correctAnswer": "1"
+    },
+    {
+      "question": "Есть ли у вас установленные мутации генов повышающих риск рака молочной железы?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "Да",
+        "Нет"
+      ],
+      "correctAnswer": "1"
+    },
+    {
+      "question": "Получали ли вы лучевую терапию на область выше диафрагмы (грудная клетка, голова или шея) в возрасте до 30 лет?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "Да",
+        "Нет"
+      ],
+      "correctAnswer": "1"
+   }
   ]
 };
 
-const ResultA = 'Вы находитесь в группе повышенного риска. Рекомендуем не откладывать посещение врача-маммолога';
-const ResultB = 'Вы находитесь в группе пониженного риска. Тем не менее, рекомендуем регулярно посещать врача-маммолога';
+const ResultA = 'У Вас высокий риск';
+const ResultB = 'У Вас низкий риск';
 
 const renderCustomResultPage = (obj) => {
   const { numberOfCorrectAnswers } = obj;
