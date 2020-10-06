@@ -6,8 +6,8 @@ const Footer = () => (
     <div className="wrapper">
       <div className="col col-1/4">
         <Link activeClassName="active" partiallyActive={true} to="/about-project">О проекте</Link>
-        <Link activeClassName="active" to="/">Контакты</Link>
-        <Link activeClassName="active" to="/">Как помочь проекту</Link>
+        <Link activeClassName="active" partiallyActive={true} to="/about-project">Контакты</Link>
+        <Link activeClassName="active" partiallyActive={true} to="/about-project">Как помочь проекту</Link>
       </div>
       <div className="col col-1/4">
         <Link activeClassName="active" to="/">Получить помощь</Link>
@@ -18,7 +18,7 @@ const Footer = () => (
       </div>
       <div className="col col-1/4">
         <Link activeClassName="active" partiallyActive={true} to="/about-cancer">О раке груди</Link>
-        <Link activeClassName="active" to="/">Что такое рак</Link>
+        <Link activeClassName="active" partiallyActive={true} to="/about-cancer">Что такое рак</Link>
         <Link activeClassName="active" partiallyActive={true} to="/causes">Причины</Link>
         <Link activeClassName="active" partiallyActive={true} to="/diagnose">Диагностика</Link>
         <Link activeClassName="active" partiallyActive={true} to="/treatment">Лечение</Link>
