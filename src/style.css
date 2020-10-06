@@ -160,6 +160,7 @@ strong {
 .flex-always { /* always means for all screens, inc. mobile */
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .center {
@@ -269,7 +270,7 @@ main p:first-child {
   cursor: pointer;
 }
 
-.active .menu-toggle {
+.expanded .menu-toggle {
   padding: 15px 10px;
 }
 
@@ -280,20 +281,20 @@ main p:first-child {
   margin: 5px 0;
 }
 
-.active .hamburger:nth-child(1) {
+.expanded .hamburger:nth-child(1) {
   display: none;
 }
 
-.active .hamburger:nth-child(2) {
+.expanded .hamburger:nth-child(2) {
   transform: rotate(45deg);
   margin-bottom: -7px;
 }
 
-.active .hamburger:nth-child(3) {
+.expanded .hamburger:nth-child(3) {
   transform: rotate(-45deg);
 }
 
-.active .menu-links {
+.expanded .menu-links {
   display: block;
 }
 
@@ -554,6 +555,23 @@ main p:first-child {
 
   .tout span {
     display: block;
+  }
+
+  .menu-links {
+    border-bottom: 1px solid;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    padding: var(--space-double) 0;
+  }
+
+  .menu-links a:nth-last-child(n+2) {
+    margin-right: var(--space-double);
+  }
+
+  .menu-links a.active {
+    box-shadow: 0 2px 0;
   }
 
   .sm\:hidden {
