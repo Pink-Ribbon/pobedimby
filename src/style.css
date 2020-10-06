@@ -109,7 +109,7 @@ strong {
   font-size: var(--font-size-sm);
 }
 
-.blog-post h2 {
+.article h2 {
   font-size: var(--font-size-h3);
   margin-top: var(--space-double);
   margin-bottom: var(--space);
@@ -413,7 +413,7 @@ main p:first-child {
 
 /* article */
 
-.blog-post p {
+.article p {
   margin: var(--space-double) 0;
 }
 

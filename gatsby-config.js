@@ -2,14 +2,14 @@ module.exports = {
   siteMetadata: {
     title: `Победим рак`,
     description: `Информационный ресурс Беларуси, посвященный борьбе с раком молочной железы (раком груди).`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    siteUrl: `https://www.pobedim.by/`,
   },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/articles`,
+        name: `articles`,
       },
     },
     {
