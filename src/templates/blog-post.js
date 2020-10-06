@@ -32,20 +32,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             itemProp="articleBody"
           />
         </article>
-        {/* <div className="side-menu col col-1/3">
-          <div>
+        <div className="side-menu col col-1/3 hidden md:visible">
+          <div class="wrapper">
             <Link className="side-menu-link" to="/">Клиники</Link>
-          </div>
-          <div>
             <Link className="side-menu-link" to="/">Врачи</Link>
-          </div>
-          <div>
             <Link className="side-menu-link" to="/">Самопомощь</Link>
-          </div>
-          <div>
             <Link className="side-menu-link" to="/quiz/">Пройти тест</Link>
           </div>
-        </div> */}
+        </div>
       </div>
     </Layout>
   )

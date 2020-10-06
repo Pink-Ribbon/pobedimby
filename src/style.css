@@ -83,6 +83,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: var(--font-size-h1);
+  line-height: 1.1;
 }
 
 h2 {
@@ -165,12 +166,22 @@ strong {
   display: block;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Elements
 /* =========== */
 
 a {
   color: var(--color-blue);
   text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--color-pink);
 }
 
 main h1:first-child,
@@ -232,10 +243,6 @@ main p:first-child {
 
 .header {
   margin-bottom: var(--space-double);
-}
-
-.get-test {
-
 }
 
 .image-container {
@@ -329,6 +336,19 @@ main p:first-child {
   margin: var(--space-double) 0;
 }
 
+.side-menu {
+  text-align: center;
+}
+
+.side-menu .wrapper {
+  text-align: left;
+  display: inline-block;
+}
+
+.side-menu a {
+  display: block;
+  margin-bottom: var(--space);
+}
 
 /* Quiz */
 .tag-container {
@@ -508,6 +528,10 @@ main p:first-child {
     left: 50%;
     bottom: -80px;
     margin-left: -70px;
+  }
+
+  .md\:visible {
+    display: block;
   }
 }
 
