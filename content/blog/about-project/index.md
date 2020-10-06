@@ -15,7 +15,10 @@ description: "Компания EPAM присоединяется к Estée Laude
 
 ## Связаться с нами
 
-Связаться с нами можно написав в личные сообщения любому из [участников проекта](https://github.com/Pink-Ribbon/pobedimby/graphs/contributors) на GitHub.
+Связаться с нами можно
+* через email _info@pobedim.by_
+* написав в личные сообщения любому из [участников проекта](https://github.com/Pink-Ribbon/pobedimby/graphs/contributors) на GitHub.
+* открыв [issue (тикет) с вопросом, проблемой или предложением](https://github.com/Pink-Ribbon/pobedimby/issues) в репозитории проекта на GitHub. Нажмите на кнопку _New Issue_ для создания тикета.
 
 ## Предложить помощь проекту
 
