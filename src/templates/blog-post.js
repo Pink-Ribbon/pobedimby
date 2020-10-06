@@ -33,7 +33,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           />
         </article>
         <div className="side-menu col col-1/3 hidden md:visible">
-          <div class="wrapper">
+          <div className="wrapper">
             <Link className="side-menu-link" to="/">Клиники</Link>
             <Link className="side-menu-link" to="/">Врачи</Link>
             <Link className="side-menu-link" to="/">Самопомощь</Link>

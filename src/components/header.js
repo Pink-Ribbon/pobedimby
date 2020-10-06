@@ -10,8 +10,11 @@ const Header = ({ title, description }) => (
         <Link className="col" to="/">Получить помощь</Link>
         <Link className="col" to="/">О раке груди</Link>
       </div>
-      <div>
+      <div className="flex">
         <Link className="btn get-test" to="/quiz/">Пройти тест</Link>
+        <span className="get-test-des hidden md:visible text-sm">
+          Оцените риск <br />заболевания за 5 мин
+        </span>
       </div>
     </div>
     {/* <h1>

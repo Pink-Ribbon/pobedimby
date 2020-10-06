@@ -51,6 +51,8 @@
   --font-size-h2: 24px;
   --font-size-h3: 20px;
   --font-size-h4: 16px;
+  --font-size-base: 15px;
+  --font-size-sm: 12px;
 
   --quiz-start-button-label: "НАЧАТЬ";
   --quiz-next-button-label: "ДАЛЕЕ";
@@ -100,6 +102,10 @@ h4 {
 
 strong {
   font-family: var(--fontFamily-sans-bold);
+}
+
+.text-sm {
+  font-size: var(--font-size-sm);
 }
 
 .blog-post h2 {
@@ -250,6 +256,11 @@ main p:first-child {
   background-size: contain;
   width: 50%;
   padding-bottom: 50%;
+}
+
+.get-test-des {
+  margin-left: var(--space);
+  align-self: center;
 }
 
 /* footer */

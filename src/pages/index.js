@@ -52,7 +52,7 @@ const HomePage = ({ data, location }) => {
           Причины
         </Link>
         <Link key="/diagnose/"  className="tout" to="/diagnose/" itemProp="url">
-          <span>Ранняя</span>
+          <span>Ранняя </span>
           <span>диагностика</span>
         </Link>
         <Link key="/treatment/"  className="tout" to="/treatment/" itemProp="url">
