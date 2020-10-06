@@ -22,7 +22,7 @@ const Footer = () => (
         <Link activeClassName="active" partiallyActive={true} to="/causes">Причины</Link>
         <Link activeClassName="active" partiallyActive={true} to="/diagnose">Диагностика</Link>
         <Link activeClassName="active" partiallyActive={true} to="/treatment">Лечение</Link>
-        <Link activeClassName="active" partiallyActive={true} to="/myth">Мифы</Link>
+        <Link activeClassName="active" partiallyActive={true} to="/myths">Мифы</Link>
       </div>
       <div className="col col-1/4">
         <div className="copyright">
