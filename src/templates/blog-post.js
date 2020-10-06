@@ -23,7 +23,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       </header>
       <div className="flex">
         <article
-          className="blog-post space-y col col-2/3"
+          className="blog-post col col-2/3"
           itemScope
           itemType="http://schema.org/Article"
         >
@@ -34,17 +34,17 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </article>
         <div className="side-menu col col-1/3 hidden md:visible">
           <div className="wrapper">
-            <Link className="side-menu-link" to="/">Клиники</Link>
-            <Link className="side-menu-link" to="/">Врачи</Link>
-            <Link className="side-menu-link" to="/">Самопомощь</Link>
-            <Link className="side-menu-link" to="/quiz/">Пройти тест</Link>
-            <Link className="side-menu-link" to="/diagnose">Диагностика</Link>
-            <Link className="side-menu-link" to="/about-cancer">Что такое рак груди</Link>
-            <Link className="side-menu-link" to="/articles">Ссылки на статьи и истории</Link>
-            <Link className="side-menu-link" to="/faq">Часто задаваемые вопросы</Link>
-            <Link className="side-menu-link" to="/myths">Мифы</Link>
-            <Link className="side-menu-link" to="/statistics">Статистика</Link>
-            <Link className="side-menu-link" to="/treatment">Лечение</Link>
+            <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/clinics">Клиники</Link>
+            <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/doctors">Врачи</Link>
+            <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/diagnose">Самопомощь</Link>
+            <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/quiz/">Пройти тест</Link>
+            <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/diagnose">Диагностика</Link>
+            <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/about-cancer">Что такое рак груди</Link>
+            <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/articles">Ссылки на статьи и истории</Link>
+            <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/faq">Часто задаваемые вопросы</Link>
+            <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/myths">Мифы</Link>
+            <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/statistics">Статистика</Link>
+            <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/treatment">Лечение</Link>
           </div>
         </div>
       </div>

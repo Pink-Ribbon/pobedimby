@@ -1,10 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-import Menu from './menu'
 
 const HeaderMain = () => (
-  <div className="main-header container space-y">
-    <Menu />
+  <div className="main-header container">
     <h1 className="title col-1/2">
       Вместе <strong>победим</strong><br />
       рак молочной железы
@@ -15,8 +13,8 @@ const HeaderMain = () => (
       При ранней диагностике РМЖ излечивается почти в 100% случаев
     </p>
     <div className="header-buttons space-y">
-      <Link className="col btn btn-pink" to="/diagnose">Пройти диагностику</Link>
-      <Link className="col btn" to="/quiz">Оценить риски</Link>
+      <Link activeClassName="active" partiallyActive={true} className="col btn btn-pink" to="/diagnose">Пройти диагностику</Link>
+      <Link activeClassName="active" partiallyActive={true} className="col btn" to="/quiz">Оценить риски</Link>
     </div>
   </div>
 )

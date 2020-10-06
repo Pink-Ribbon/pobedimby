@@ -7,7 +7,7 @@ import goldenRibbonImage from '../../static/images/golden-ribbon.png';
 
 const HomePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+  // const posts = data.allMarkdownRemark.nodes
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -37,31 +37,31 @@ const HomePage = ({ data, location }) => {
         <div className="fact col col-1/3">
           <h3 className="text-pink">16,2%</h3>
           <p>
-            От всех случаев рака, которые диагностируются у женщин в Беларуси. Пройдите <Link to="/diagnose">профилактическое обследование</Link>
+            От всех случаев рака, которые диагностируются у женщин в Беларуси. Пройдите <Link activeClassName="active" partiallyActive={true} to="/diagnose">профилактическое обследование</Link>
           </p>
         </div>
       </div>
 
       <div className="touts space-y">
-        <Link key="/about-cancer/"  className="tout" to="/about-cancer/" itemProp="url">
+        <Link activeClassName="active" partiallyActive={true} key="/about-cancer/"  className="tout" to="/about-cancer/" itemProp="url">
           <span>Что </span>
           <span>такое </span>
           <span>рак</span>
         </Link>
-        <Link key="/causes/"  className="tout" to="/causes/" itemProp="url">
+        <Link activeClassName="active" partiallyActive={true} key="/causes/"  className="tout" to="/causes/" itemProp="url">
           Причины
         </Link>
-        <Link key="/diagnose/"  className="tout" to="/diagnose/" itemProp="url">
+        <Link activeClassName="active" partiallyActive={true} key="/diagnose/"  className="tout" to="/diagnose/" itemProp="url">
           <span>Ранняя </span>
           <span>диагностика</span>
         </Link>
-        <Link key="/treatment/"  className="tout" to="/treatment/" itemProp="url">
+        <Link activeClassName="active" partiallyActive={true} key="/treatment/"  className="tout" to="/treatment/" itemProp="url">
           Лечение
         </Link>
-        <Link key="/myths/"  className="tout" to="/myths/" itemProp="url">
+        <Link activeClassName="active" partiallyActive={true} key="/myths/"  className="tout" to="/myths/" itemProp="url">
           Мифы
         </Link>
-        <Link key="/articles/"  className="tout" to="/articles/" itemProp="url">
+        <Link activeClassName="active" partiallyActive={true} key="/articles/"  className="tout" to="/articles/" itemProp="url">
           <span>Статьи </span>
           <span>и истории</span>
         </Link>        
@@ -70,7 +70,7 @@ const HomePage = ({ data, location }) => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
-            <Link key={post.fields.slug}  className="tout" to={post.fields.slug} itemProp="url">
+            <Link activeClassName="active" partiallyActive={true} key={post.fields.slug}  className="tout" to={post.fields.slug} itemProp="url">
               {title}
             </Link>
           )
@@ -85,14 +85,14 @@ const HomePage = ({ data, location }) => {
             Профилактика важнее лечения, обращайтесь за помощью вовремя
           </p>
           <div className="links space-y">
-            <Link className="col" to="/clinics">Клиники</Link>
-            <Link className="col" to="/doctors">Врачи</Link>
-            <Link className="col" to="/">Психологи</Link>
-            <Link className="col" to="/diagnose">Самопомощь</Link>
+            <Link activeClassName="active" partiallyActive={true} className="col" to="/clinics">Клиники</Link>
+            <Link activeClassName="active" partiallyActive={true} className="col" to="/doctors">Врачи</Link>
+            <Link activeClassName="active" className="col" to="/">Психологи</Link>
+            <Link activeClassName="active" partiallyActive={true} className="col" to="/diagnose">Самопомощь</Link>
           </div>
           <div className="buttons flex">
-            <Link className="btn btn-pink col col-1/2" to="/diagnose">Пройти диагностику</Link>
-            <Link className="btn btn-gray col col-1/2" to="/quiz">Оценить риск</Link>
+            <Link activeClassName="active" partiallyActive={true} className="btn btn-pink col col-1/2" to="/diagnose">Пройти диагностику</Link>
+            <Link activeClassName="active" partiallyActive={true} className="btn btn-gray col col-1/2" to="/quiz">Оценить риск</Link>
           </div>
         </div>
         <div className="action col col-1/2 project-help">
@@ -105,16 +105,16 @@ const HomePage = ({ data, location }) => {
             https://pobedim.by
           </p>
           <div className="links">
-            <Link to="/about-project/">Подробнее</Link>
+            <Link activeClassName="active" partiallyActive={true} to="/about-project/">Подробнее</Link>
           </div>
         </div>
       </div>
 
-      <div className="hash-tag center space-y">
+      <div className="hash-tag center">
         <strong className="block space-y-st">ХЭШТЕГ</strong>
-        <Link className="block space-y-st" to="https://www.google.com/search?q=%23TimeToEndBreastCancer">
+        <a className="block space-y-st" href="https://www.google.com/search?q=%23TimeToEndBreastCancer">
           #TimeToEndBreastCancer
-        </Link>
+        </a>
         <div>
           <img src={goldenRibbonImage} />
         </div>
