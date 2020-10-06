@@ -39,7 +39,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({
       </a>
       .
     </p>
-    <Link activeClassName="active" partiallyActive={true} to="/">Go back to the homepage</Link>
+    <Link activeClassName="active" to="/">Go back to the homepage</Link>
   </Layout>
 )
 

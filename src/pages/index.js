@@ -87,7 +87,7 @@ const HomePage = ({ data, location }) => {
           <div className="links space-y">
             <Link activeClassName="active" partiallyActive={true} className="col" to="/clinics">Клиники</Link>
             <Link activeClassName="active" partiallyActive={true} className="col" to="/doctors">Врачи</Link>
-            <Link activeClassName="active" partiallyActive={true} className="col" to="/">Психологи</Link>
+            <Link activeClassName="active" className="col" to="/">Психологи</Link>
             <Link activeClassName="active" partiallyActive={true} className="col" to="/diagnose">Самопомощь</Link>
           </div>
           <div className="buttons flex">
