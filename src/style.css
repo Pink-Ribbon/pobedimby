@@ -115,6 +115,10 @@ strong {
   margin-bottom: var(--space);
 }
 
+.blog-post h3 {
+  font-size: var(--font-size-h4);
+}
+
 /* colors
 /* =========== */
 
@@ -429,6 +433,10 @@ main p:first-child {
 .side-menu a {
   display: block;
   margin-bottom: var(--space);
+}
+
+.side-menu a.active {
+  color: var(--color-pink);
 }
 
 /* Quiz */
