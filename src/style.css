@@ -38,6 +38,7 @@
   --color-gray: #E0E0E0;
   --color-gray-light: #F2F2F2;
   --color-white: #ffffff;
+  --color-yellow: #ffc000;
 
   --fontFamily-sans: 'Museo Sans', Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
@@ -212,10 +213,18 @@ main p:first-child {
   text-align: center;
 }
 
+.btn:hover {
+  opacity: .9;
+}
+
 .btn-pink {
   color: var(--color-white);
   background-color: var(--color-pink);
   border-color: var(--color-pink);
+}
+
+.btn-pink:hover {
+  color: white;
 }
 
 .btn-gray {
@@ -305,7 +314,7 @@ main p:first-child {
   display: block;
 }
 
-.expanded .menu-links a.active {
+.menu-links a.active {
   font-family: var(--fontFamily-sans-bold);
   font-weight: bold;
 }
@@ -341,6 +350,11 @@ main p:first-child {
   font-family: var(--fontFamily-sans-bold);
 }
 
+.footer a:hover {
+  color: var(--color-pink);
+}
+
+
 .share {
   margin-top: var(--space);
 }
@@ -363,6 +377,10 @@ main p:first-child {
   margin-top: var(--space);
   padding: var(--space);
   min-height: 80px;
+}
+
+.tout:hover {
+  /* background-color: #ccc; */
 }
 
 /* actions */
