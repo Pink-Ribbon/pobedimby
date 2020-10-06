@@ -418,10 +418,6 @@ main p:first-child {
   display: none;
 }
 
-.quiz-wrapper {
-  padding: var(--space-y) 0;
-}
-
 .questionWrapper {
   margin-bottom: var(--space-y);
 }

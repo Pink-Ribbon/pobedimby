@@ -23,7 +23,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       </header>
       <div className="flex">
         <article
-          className="blog-post space-y col col-2/3"
+          className="blog-post col col-2/3"
           itemScope
           itemType="http://schema.org/Article"
         >

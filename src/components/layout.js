@@ -19,7 +19,7 @@ const Layout = ({ location, title, description, children }) => {
         <Menu />
         {header}
       </header>
-      <main className="container">{children}</main>
+      <main className="container space-y">{children}</main>
       <footer className="footer">
         <Footer />
       </footer>
