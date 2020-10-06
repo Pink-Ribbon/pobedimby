@@ -38,6 +38,13 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <Link className="side-menu-link" to="/">Врачи</Link>
             <Link className="side-menu-link" to="/">Самопомощь</Link>
             <Link className="side-menu-link" to="/quiz/">Пройти тест</Link>
+            <Link className="side-menu-link" to="/diagnose">Диагностика</Link>
+            <Link className="side-menu-link" to="/about-cancer">Что такое рак груди</Link>
+            <Link className="side-menu-link" to="/articles">Ссылки на статьи и истории</Link>
+            <Link className="side-menu-link" to="/faq">Часто задаваемые вопросы</Link>
+            <Link className="side-menu-link" to="/myths">Мифы</Link>
+            <Link className="side-menu-link" to="/statistics">Статистика</Link>
+            <Link className="side-menu-link" to="/treatment">Лечение</Link>
           </div>
         </div>
       </div>
