@@ -23,21 +23,21 @@ const HomePage = ({ data, location }) => {
 
       <div className="flex space-y">
         <div className="fact col col-1/3">
-          <h3 className="text-pink">5 000</h3>
+          <h3 className="text-pink">4 500</h3>
           <p>
             Человек только в Беларуси ежегодно заболевают раком молочной железы
           </p>
         </div>
         <div className="fact col col-1/3">
-          <h3 className="text-pink">50 лет</h3>
+          <h3 className="text-pink">49 лет</h3>
           <p>
-            Средний возраст женщины, старше которого увеличивается риск заболевания
+            Пик заболеваемости раком молочной железы. Чаще всего выявляется в возрасте от 40 до 60 лет
           </p>
         </div>
         <div className="fact col col-1/3">
-          <h3 className="text-pink">1%</h3>
+          <h3 className="text-pink">16,2%</h3>
           <p>
-            Процент заболевания, которое случается у мужчин. Пройдите <Link to="/diagnose">профилактическое обследование</Link>
+            От всех случаев рака, которые диагностируются у женщин в Беларуси. Пройдите <Link to="/diagnose">профилактическое обследование</Link>
           </p>
         </div>
       </div>
