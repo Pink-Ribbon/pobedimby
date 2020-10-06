@@ -15,7 +15,7 @@ const Layout = ({ location, title, description, children }) => {
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">
+      <header className="global-header space-y">
         <Menu />
         {header}
       </header>

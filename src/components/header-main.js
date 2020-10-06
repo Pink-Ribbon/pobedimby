@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 const HeaderMain = () => (
-  <div className="main-header container space-y">
+  <div className="main-header container">
     <h1 className="title col-1/2">
       Вместе <strong>победим</strong><br />
       рак молочной железы
