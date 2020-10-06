@@ -1,15 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
+import Menu from './menu'
 
 const Header = ({ title, description }) => (
   <div className="header container">
     <div className="flex-always">
-      <div className="menu">
+      {/* <div className="menu">
         <Link className="col" to="/">Главная</Link>
         <Link className="col" to="/">О проекте</Link>
         <Link className="col" to="/">Получить помощь</Link>
         <Link className="col" to="/">О раке груди</Link>
-      </div>
+      </div> */}
+      <Menu />
       <div className="flex">
         <Link className="btn get-test" to="/quiz/">Пройти тест</Link>
         <span className="get-test-des hidden md:visible text-sm">

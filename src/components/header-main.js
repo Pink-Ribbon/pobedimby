@@ -1,14 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
+import Menu from './menu'
 
 const HeaderMain = () => (
   <div className="main-header container space-y">
-    <div className="menu">
-      <Link className="col" to="/">Главная</Link>
-      <Link className="col" to="/">О проекте</Link>
-      <Link className="col" to="/">Получить помощь</Link>
-      <Link className="col" to="/">О раке груди</Link>
-    </div>
+    <Menu />
     <h1 className="title col-1/2">
       Вместе <strong>победим</strong><br />
       рак молочной железы
