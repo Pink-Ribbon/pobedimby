@@ -546,11 +546,21 @@ main p:first-child {
 .clinic {
   border: 1px solid var(--color-gray-light);
   border-radius: var(--radius);
+  position: relative;
 }
 
 .clinic h4 {
   padding: var(--space);
   margin: 0;
+  position: absolute;
+  color: white;
+  text-shadow: 1px 1px black;
+  background-color: rgb(0 0 0 / 20%);
+  line-height: 1.1;
+}
+
+.clinic h4 a {
+  color: white;
 }
 
 .clinic img {
