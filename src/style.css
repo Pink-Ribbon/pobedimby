@@ -312,7 +312,7 @@ main p:first-child {
 }
 
 .react-quiz-container {
-  margin: 0 auto 100px !important;
+  margin: 0 auto 20px !important;
   text-align: center;
   width: unset !important;
   max-width: 500px;
@@ -385,6 +385,13 @@ main p:first-child {
 
 .nextQuestionBtn.btn:after {
   content: var(--quiz-next-button-label);
+}
+
+.quiz-notice {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  font-size: 12px;
 }
 
 /* Screens
