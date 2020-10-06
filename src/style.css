@@ -258,6 +258,10 @@ main p:first-child {
   padding-bottom: 50%;
 }
 
+.get-test.active {
+  display: none;
+}
+
 .get-test-des {
   margin-left: var(--space);
   align-self: center;
@@ -412,6 +416,14 @@ main p:first-child {
 /* Quiz */
 .tag-container {
   display: none;
+}
+
+.quiz-wrapper {
+  padding: var(--space-y) 0;
+}
+
+.questionWrapper {
+  margin-bottom: var(--space-y);
 }
 
 .react-quiz-container {
