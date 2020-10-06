@@ -138,13 +138,31 @@ strong {
   margin-bottom: var(--space-y);
 }
 
+.space-y-st { /* static - will not change for lg screen */
+  margin-bottom: var(--space);
+}
+
+.space-y-st-half {
+  margin-bottom: var(--space-half);
+}
+
 .w-full {
   width: 100%;
 }
 
-.flex-always {
+.flex-always { /* always means for all screens, inc. mobile */
   display: flex;
   justify-content: space-between;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block {
+  display: block;
 }
 
 /* Elements
@@ -296,6 +314,12 @@ main p:first-child {
   margin-bottom: 10px;
 }
 
+/* hashtag */
+
+.hash-tag a {
+  font-size: var(--font-size-h2);
+}
+
 /* Pages
 /* =========== */
 
@@ -437,6 +461,10 @@ main p:first-child {
   .col-1\/6 {
     width: var(--col-1\/6);
   }
+
+  .sm\:col-1\/2 {
+    width: 50%;
+  }
   
   .btn {
     display: inline-block;
@@ -489,6 +517,10 @@ main p:first-child {
   .tout {
     width: calc(var(--col-1\/6) - var(--space));
     padding-bottom: calc(var(--col-1\/6) - var(--space-double));
+  }
+
+  .lg\:col-1\/3 {
+    width: var(--col-1\/3);
   }
 }
 

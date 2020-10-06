@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import goldenRibbonImage from '../../static/images/golden-ribbon.png';
 
 const HomePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -107,6 +108,21 @@ const HomePage = ({ data, location }) => {
             <Link to="/about-project/">Подробнее</Link>
           </div>
         </div>
+      </div>
+
+      <div className="hash-tag center space-y">
+        <strong className="block space-y-st">ХЭШТЕГ</strong>
+        <Link className="block space-y-st" to="https://www.google.com/search?q=%23TimeToEndBreastCancer">
+          #TimeToEndBreastCancer
+        </Link>
+        <div>
+          <img src={goldenRibbonImage} />
+        </div>
+        <p className="sm:col-1/2 lg:col-1/3 center">
+          <strong>Pobedim.by</strong> присоединяется к <strong>Estée Lauder</strong> в информационном движении против заболевания рака груди. 
+          Важно обратить внимание на профилактику и раннюю диагностику в Беларуси и не только. 
+          Пора победить рак груди вместе! 
+        </p>
       </div>
 
     </Layout>
