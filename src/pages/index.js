@@ -112,7 +112,7 @@ const HomePage = ({ data, location }) => {
 
       <div className="hash-tag center">
         <strong className="block space-y-st">ХЭШТЕГ</strong>
-        <a className="block space-y-st" src="https://www.google.com/search?q=%23TimeToEndBreastCancer">
+        <a className="block space-y-st" href="https://www.google.com/search?q=%23TimeToEndBreastCancer">
           #TimeToEndBreastCancer
         </a>
         <div>
