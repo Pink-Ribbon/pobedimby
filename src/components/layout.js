@@ -1,8 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import HeaderMain from './header-main'
-import Header from './header'
 import Footer from './footer'
+import Menu from './menu'
 
 const Layout = ({ location, title, description, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -11,12 +10,15 @@ const Layout = ({ location, title, description, children }) => {
   if (isRootPath) {
     header = <HeaderMain />
   } else {
-    header = <Header title={title} description={description} />
+    header = ''
   }
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
+      <header className="global-header">
+        <Menu />
+        {header}
+      </header>
       <main className="container">{children}</main>
       <footer className="footer">
         <Footer />

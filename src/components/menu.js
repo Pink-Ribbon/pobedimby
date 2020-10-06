@@ -6,7 +6,7 @@ const Menu = () => {
   const toggleActive = () => active === 'active' ? setActive('') : setActive('expanded');
 
   return (
-    <div className="flex-always">
+    <div className="flex-always container">
       <div className={`menu ${active}`}>
         <a className="btn menu-toggle sm:hidden" onClick={toggleActive}>
           <span className="hamburger" />
