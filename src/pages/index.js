@@ -7,7 +7,7 @@ import goldenRibbonImage from '../../static/images/golden-ribbon.png';
 
 const HomePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+  // const posts = data.allMarkdownRemark.nodes
 
   return (
     <Layout location={location} title={siteTitle}>
