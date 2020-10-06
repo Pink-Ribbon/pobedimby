@@ -7,7 +7,7 @@ description: "Что вызывает рак молочной железы"
 
 ### Основные факторы риска
 
-![Анализ причин рака груди](./doctor-with-pink-awareness-ribbon-and-patient-P6BL5PJ)
+![Анализ причин рака груди](./doctor-with-pink-awareness-ribbon-and-patient-P6BL5PJ.jpg)
 
 Факторы риска развития рака молочной железы:
 
