@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'Museo Sans';
-  src: url(/fonts/exljbris\ -\ MuseoSans-300.otf);
+  src: url(/fonts/MuseoSans-300.woff2);
 }
 @font-face {
   font-family: 'Museo Sans Bold';
-  src: url(/fonts/exljbris\ -\ MuseoSans-700.otf);
+  src: url(/fonts/MuseoSans-700.woff2);
 }
 
 :root {
