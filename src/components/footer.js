@@ -6,8 +6,8 @@ const Footer = () => (
     <div className="wrapper">
       <div className="col col-1/4">
         <Link to="/about-project">О проекте</Link>
-        <Link to="/">Контакты</Link>
-        <Link to="/">Как помочь проекту</Link>
+        <Link to="/about-project">Контакты</Link>
+        <Link to="/about-project">Как помочь проекту</Link>
       </div>
       <div className="col col-1/4">
         <Link to="/">Получить помощь</Link>
@@ -22,7 +22,7 @@ const Footer = () => (
         <Link to="/causes">Причины</Link>
         <Link to="/diagnose">Диагностика</Link>
         <Link to="/treatment">Лечение</Link>
-        <Link to="/myth">Мифы</Link>
+        <Link to="/myths">Мифы</Link>
       </div>
       <div className="col col-1/4">
         <div className="copyright">
