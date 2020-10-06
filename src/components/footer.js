@@ -5,24 +5,24 @@ const Footer = () => (
   <div className="container">
     <div className="wrapper">
       <div className="col col-1/4">
-        <Link to="/">О проекте</Link>
+        <Link to="/about-project">О проекте</Link>
         <Link to="/">Контакты</Link>
         <Link to="/">Как помочь проекту</Link>
       </div>
       <div className="col col-1/4">
         <Link to="/">Получить помощь</Link>
-        <Link to="/">Клиники</Link>
-        <Link to="/">Врачи</Link>
+        <Link to="/clinics">Клиники</Link>
+        <Link to="/doctors">Врачи</Link>
         <Link to="/">Психологи</Link>
-        <Link to="/">Самопомощь</Link>
+        <Link to="/diagnose">Самопомощь</Link>
       </div>
       <div className="col col-1/4">
-        <Link to="/">О раке груди</Link>
+        <Link to="/about-cancer">О раке груди</Link>
         <Link to="/">Что такое рак</Link>
-        <Link to="/">Причины</Link>
-        <Link to="/">Диагностика</Link>
-        <Link to="/">Лечение</Link>
-        <Link to="/">Мифы</Link>
+        <Link to="/causes">Причины</Link>
+        <Link to="/diagnose">Диагностика</Link>
+        <Link to="/treatment">Лечение</Link>
+        <Link to="/myth">Мифы</Link>
       </div>
       <div className="col col-1/4">
         <div className="copyright">

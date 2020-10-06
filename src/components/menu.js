@@ -15,9 +15,9 @@ const Menu = () => {
       </a>
       <div className="menu-links hidden sm:visible">
         <Link className="col" to="/">Главная</Link>
-        <Link className="col" to="/">О проекте</Link>
+        <Link className="col" to="/about-project">О проекте</Link>
         <Link className="col" to="/">Получить помощь</Link>
-        <Link className="col" to="/">О раке груди</Link>
+        <Link className="col" to="/about-cancer">О раке груди</Link>
       </div>
     </div>
   );

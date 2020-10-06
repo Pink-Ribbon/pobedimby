@@ -85,10 +85,10 @@ const HomePage = ({ data, location }) => {
             Профилактика важнее лечения, обращайтесь за помощью вовремя
           </p>
           <div className="links space-y">
-            <Link className="col" to="/">Клиники</Link>
-            <Link className="col" to="/">Врачи</Link>
+            <Link className="col" to="/clinics">Клиники</Link>
+            <Link className="col" to="/doctors">Врачи</Link>
             <Link className="col" to="/">Психологи</Link>
-            <Link className="col" to="/">Самопомощь</Link>
+            <Link className="col" to="/diagnose">Самопомощь</Link>
           </div>
           <div className="buttons flex">
             <Link className="btn btn-pink col col-1/2" to="/diagnose">Пройти диагностику</Link>
