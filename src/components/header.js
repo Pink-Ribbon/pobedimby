@@ -7,7 +7,7 @@ const Header = ({ title, description }) => (
     <div className="flex-always">
       <Menu />
       <div className="flex">
-        <Link className="btn get-test" to="/quiz/">Пройти тест</Link>
+        <Link activeClassName="active" partiallyActive={true} className="btn get-test" to="/quiz/">Пройти тест</Link>
         <span className="get-test-des hidden md:visible text-sm">
           Оцените риск <br />заболевания за 5 мин
         </span>

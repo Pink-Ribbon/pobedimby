@@ -15,8 +15,8 @@ const HeaderMain = () => (
       При ранней диагностике РМЖ излечивается почти в 100% случаев
     </p>
     <div className="header-buttons space-y">
-      <Link className="col btn btn-pink" to="/diagnose">Пройти диагностику</Link>
-      <Link className="col btn" to="/quiz">Оценить риски</Link>
+      <Link activeClassName="active" partiallyActive={true} className="col btn btn-pink" to="/diagnose">Пройти диагностику</Link>
+      <Link activeClassName="active" partiallyActive={true} className="col btn" to="/quiz">Оценить риски</Link>
     </div>
   </div>
 )
