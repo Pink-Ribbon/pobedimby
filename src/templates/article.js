@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
+const ArticleTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   // const siteTitle = data.site.siteMetadata?.title || `Title`
 
@@ -23,7 +23,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       </header>
       <div className="flex">
         <article
-          className="blog-post col col-2/3"
+          className="article space-y col col-2/3"
           itemScope
           itemType="http://schema.org/Article"
         >
@@ -51,10 +51,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   )
 }
 
-export default BlogPostTemplate
+export default ArticleTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query ArticleBySlug($slug: String!) {
     site {
       siteMetadata {
         title
