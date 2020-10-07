@@ -115,6 +115,10 @@ strong {
   margin-bottom: var(--space);
 }
 
+.blog-post h3 {
+  font-size: var(--font-size-h4);
+}
+
 /* colors
 /* =========== */
 
@@ -136,6 +140,16 @@ strong {
 
 .col {
   display: block;
+}
+
+.grid {    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.grid > div {
+  margin-bottom: var(--space);
 }
 
 .col:nth-last-child(n+2) {
@@ -431,6 +445,10 @@ main p:first-child {
   margin-bottom: var(--space);
 }
 
+.side-menu a.active {
+  color: var(--color-pink);
+}
+
 /* Quiz */
 .tag-container {
   display: none;
@@ -523,6 +541,40 @@ main p:first-child {
   font-size: 12px;
 }
 
+/* clinics */
+
+.clinic {
+  border: 1px solid var(--color-gray-light);
+  border-radius: var(--radius);
+  position: relative;
+}
+
+.clinic h4 {
+  padding: var(--space);
+  margin: 0;
+  position: absolute;
+  color: white;
+  text-shadow: 1px 1px black;
+  background-color: rgb(0 0 0 / 20%);
+  line-height: 1.1;
+}
+
+.clinic h4 a {
+  color: white;
+}
+
+.clinic img {
+  width: 100%;
+}
+
+.clinic .body {
+  padding: var(--space);
+}
+
+.clinic .item:nth-last-child(n+2) {
+  margin-bottom: 10px;
+}
+
 /* Screens
 /* =========== */
 
@@ -569,6 +621,10 @@ main p:first-child {
 
   .sm\:col-1\/2 {
     width: 50%;
+  }
+
+  .sm\:grid-1\/2 > div {
+    width: calc(50% - var(--space));
   }
   
   .btn {
@@ -660,6 +716,16 @@ main p:first-child {
 
   .lg\:col-1\/3 {
     width: var(--col-1\/3);
+  }
+
+  .lg\:grid-1\/4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .lg\:grid-1\/4 > div {
+    width: calc(25% - var(--space));
   }
 
   .lg\:visible {
