@@ -3,13 +3,13 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import RNPC_Alexandrova from '../../content/blog/clinics/RNPC_Alexandrova.jpg';
-import Minsk_onkodispanser_3 from '../../content/blog/clinics/Minsk_onkodispanser_3.jpg';
-import Brest_onkodispanser from '../../content/blog/clinics/Brest_onkodispanser.jpg';
-import vitebsk_onkodispanser from '../../content/blog/clinics/vitebsk_onkodispanser.jpg';
-import gomel_onkodispanser from '../../content/blog/clinics/gomel_onkodispanser.jpg';
-import grodno_onkodispanser from '../../content/blog/clinics/grodno_onkodispanser.jpg';
-import Mogilev_onkodispanser from '../../content/blog/clinics/Mogilev_onkodispanser.jpg';
+import RNPC_Alexandrova from '../../content/articles/clinics/RNPC_Alexandrova.jpg';
+import Minsk_onkodispanser_3 from '../../content/articles/clinics/Minsk_onkodispanser_3.jpg';
+import Brest_onkodispanser from '../../content/articles/clinics/Brest_onkodispanser.jpg';
+import vitebsk_onkodispanser from '../../content/articles/clinics/vitebsk_onkodispanser.jpg';
+import gomel_onkodispanser from '../../content/articles/clinics/gomel_onkodispanser.jpg';
+import grodno_onkodispanser from '../../content/articles/clinics/grodno_onkodispanser.jpg';
+import Mogilev_onkodispanser from '../../content/articles/clinics/Mogilev_onkodispanser.jpg';
 
 const Page = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
