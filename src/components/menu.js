@@ -23,12 +23,6 @@ const Menu = () => {
           <Link activeClassName="active" partiallyActive={true} className="" to="/about-cancer">О раке груди</Link>
         </div>
       </div>
-      <div className="flex">
-        <Link activeClassName="active" partiallyActive={true} className="btn get-test" to="/quiz/">Пройти тест</Link>
-        <span className="get-test-des hidden lg:visible text-sm">
-          Оцените риск <br />заболевания за 5 мин
-        </span>
-      </div>
     </div>
   );
 }

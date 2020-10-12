@@ -36,7 +36,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <div className="wrapper">
             <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/clinics">Клиники</Link>
             <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/doctors">Врачи</Link>
-            <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/quiz/">Пройти тест</Link>
             <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/diagnose">Диагностика</Link>
             <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/about-cancer">Что такое рак груди</Link>
             <Link activeClassName="active" partiallyActive={true} className="side-menu-link" to="/articles">Ссылки на статьи и истории</Link>
